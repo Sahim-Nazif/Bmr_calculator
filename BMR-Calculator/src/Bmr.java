@@ -1,3 +1,4 @@
+import java.lang.*;
 import java.util.Scanner;
 public class Bmr {
 
@@ -16,8 +17,8 @@ public class Bmr {
 			double weight=input.nextDouble();
 			System.out.println("Enter your age :");
 			int age=input.nextInt();
-			double bmr=66.5 + ( 13.75* weight ) + ( 5.003 *height )-( 6.755 * age );
-			System.out.printf("Your BMR is %f calories per day\n", bmr);
+			double bmr=Math.round(66.5 + ( 13.75* weight ) + ( 5.003 *height )-( 6.755 * age ));
+			System.out.printf("Your BMR is %f calories per day\n",bmr);
 			
 		}else if (gend.equalsIgnoreCase("female")) {
 		    System.out.println("Enter your height in cm :");
@@ -26,7 +27,7 @@ public class Bmr {
 			 double weight=input.nextDouble();
 			 System.out.println("Enter your age :");
 			 int age=input.nextInt();
-			 double bmr= 655.1 + ( 9.56* weight) + ( 1.850 * height)-( 4.676 * age );
+			 double bmr= Math.round(655.1 + ( 9.56* weight) + ( 1.850 * height)-( 4.676 * age ));
 			 System.out.printf("Your BMR is %f calories per day\n", bmr);
 		}else if (gend.equalsIgnoreCase("exit")) {
 			System.out.println("Have a nice day !");
