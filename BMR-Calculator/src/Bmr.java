@@ -31,6 +31,9 @@ public class Bmr {
 		}else if (gend.equalsIgnoreCase("exit")) {
 			System.out.println("Have a nice day !");
 			break;
+		} else 
+		{
+			System.out.println("Invalid Entry !");
 		}
 		
 	}
